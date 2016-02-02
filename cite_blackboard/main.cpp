@@ -1,12 +1,13 @@
-#include "cite_blackboard.h"
-#include <QtWidgets/QApplication>
+#include "head_header.h"
 
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
-	MainWindow window;
-	window.setApplication(&a);
-	window.show();
+	member_list * list;
+	//MainWindow window;
+	cite_blackboard w;
+	//w.setApplication(&a);
+	w.show();
 	
 	return a.exec();
 }

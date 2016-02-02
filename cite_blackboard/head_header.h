@@ -2,10 +2,16 @@
 #define HEAD_HEADER_H
 
 #include <iostream>
+#include <fstream>
+#include <list>
+#include <string>
 #include "cite_blackboard.h"
 #include "MainWindow.h"
 #include "member.h"
+#include "member_list.h"
+#include "undergraduate.h"
 #include "graduate.h"
+#include <QtWidgets/QApplication>
 
 using namespace std;
 
