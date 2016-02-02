@@ -10,3 +10,5 @@ cite_blackboard::~cite_blackboard()
 {
 
 }
+
+//test
