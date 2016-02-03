@@ -15,52 +15,17 @@ undergraduate::undergraduate(string new_name, string new_image, string new_email
 
 undergraduate::~undergraduate(){}
 
-//get methods
-BD undergraduate::get_birthday(){
-	return birthday;
-}
+//virtual methods
+void undergraduate::initialize(){
+	BD temp;
+	temp.year = 0;
+	temp.date = 0;
+	temp.month = 0;
 
-string undergraduate::get_image(){
-	return image;
-}
-
-string undergraduate::get_name(){
-	return name;
-}
-
-string undergraduate::get_email(){
-	return email;
-}
-
-unsigned int undergraduate::get_id(){
-	return id;
-}
-
-member_type undergraduate::get_type(){
-	return type;
-}
-
-//set methods
-void undergraduate::set_birthday(BD new_birthday){
-	birthday = new_birthday;
-}
-
-void undergraduate::set_image(string new_image){
-	image = new_image;
-}
-
-void undergraduate::set_name(string new_name){
-	name = new_name;
-}
-
-void undergraduate::set_email(string new_email){
-	email = new_email;
-}
-
-void undergraduate::set_id(unsigned int new_id){
-	id = new_id;
-}
-
-void undergraduate::set_type(member_type new_type){
-	type = new_type;
+	set_name("");
+	set_image("");
+	set_email("");
+	set_birthday(temp);
+	set_id(0);
+	set_type(_default);
 }

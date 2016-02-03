@@ -14,6 +14,7 @@ enum member_type{
 	_staff,
 	_undergraduate,
 	_graduate,
+	_default,
 };
 
 class member{
@@ -27,20 +28,22 @@ class member{
 	public:
 		//virtual destructor
 		virtual			~member(){}
-		//virtual get methods
-		virtual string	get_name() = 0;
-		virtual string	get_image() = 0;
-		virtual string	get_email() = 0;
-		virtual BD		get_birthday() = 0;
-		virtual unsigned int get_id() = 0;
-		virtual member_type get_type() = 0;
-		//virtual set methods
-		virtual void	set_name(string new_name) = 0;
-		virtual void	set_image(string new_image) = 0;
-		virtual void	set_email(string new_email) = 0;
-		virtual void	set_birthday(BD new_birthday) = 0;
-		virtual void	set_id(unsigned int new_id) = 0;
-		virtual void	set_type(member_type new_type) = 0;
+		//virtual methods
+		virtual void initialize() = 0;
+		//get methods
+		string	get_name(){return name;}
+		string	get_image(){return image;}
+		string	get_email(){return email;}
+		BD		get_birthday(){return birthday;}
+		unsigned int get_id(){return id;}
+		member_type get_type(){return type;}
+		//set methods
+		void	set_name(string new_name){name = new_name;}
+		void	set_image(string new_image){image = new_image;}
+		void	set_email(string new_email){email = new_email;}
+		void	set_birthday(BD new_birthday){birthday = new_birthday;}
+		void	set_id(unsigned int new_id){id = new_id;}
+		void	set_type(member_type new_type){type = new_type;}
 };
 
 #endif
