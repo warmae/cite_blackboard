@@ -1,5 +1,5 @@
-#ifndef GRADUATE_H
-#define GRADUATE_H
+#ifndef UNDERGRADUATE_H
+#define UNDERGRADUATE_H
 #include "head_header.h"
 
 class undergraduate : public member{
