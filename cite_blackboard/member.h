@@ -4,7 +4,6 @@
 #include "head_header.h"
 using namespace std;
 struct BD{
-	int year;
 	int month;
 	int date;
 };
@@ -29,7 +28,19 @@ class member{
 		//virtual destructor
 		virtual			~member(){}
 		//virtual methods
-		virtual void initialize() = 0;
+		virtual void initialize()
+		{
+			BD temp;
+			temp.date = 0;
+			temp.month = 0;
+
+			set_name("");
+			set_image("");
+			set_email("");
+			set_birthday(temp);
+			set_id(0);
+			set_type(_default);		
+		}
 		//get methods
 		string	get_name(){return name;}
 		string	get_image(){return image;}

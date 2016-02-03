@@ -11,6 +11,7 @@
 #include "member_list.h"
 #include "undergraduate.h"
 #include "graduate.h"
+#include "faculty.h"
 #include <QtWidgets/QApplication>
 
 using namespace std;

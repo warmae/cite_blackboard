@@ -17,15 +17,5 @@ undergraduate::~undergraduate(){}
 
 //virtual methods
 void undergraduate::initialize(){
-	BD temp;
-	temp.year = 0;
-	temp.date = 0;
-	temp.month = 0;
-
-	set_name("");
-	set_image("");
-	set_email("");
-	set_birthday(temp);
-	set_id(0);
-	set_type(_default);
+	member::initialize();
 }

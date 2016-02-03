@@ -2,34 +2,18 @@
 
 faculty::faculty(){}
 
-faculty::faculty(string new_name, string new_image, BD new_birthday) : name(new_name), image(new_image), birthday(new_birthday)
-{}
+faculty::faculty(string new_name, string new_image, string new_email, BD new_birthday, unsigned int new_id, member_type new_type, string new_web)
+{
+	set_name(new_name);
+	set_image(new_image);
+	set_email(new_email);
+	set_birthday(new_birthday);
+	set_id(new_id);
+	set_type(new_type);
+	set_web(new_web);
+}
 
 faculty::~faculty(){}
-
-BD faculty::get_birthday(){
-	return birthday;
-}
-
-string faculty::get_image(){
-	return image;
-}
-
-string faculty::get_name(){
-	return name;
-}
-
-void faculty::set_birthday(BD new_birthday){
-	birthday = new_birthday;
-}
-
-void faculty::set_image(string new_image){
-	image = new_image;
-}
-
-void faculty::set_name(string new_name){
-	name = new_name;
-}
 
 //methods of extra information
 string faculty::get_web(){
@@ -38,4 +22,10 @@ string faculty::get_web(){
 
 void faculty::set_web(string new_web){
 	web = new_web;
+}
+
+void faculty::initialize()
+{
+	member::initialize();
+	set_web("");
 }
