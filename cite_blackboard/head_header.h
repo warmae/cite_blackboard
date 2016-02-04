@@ -5,6 +5,7 @@
 #include <fstream>
 #include <list>
 #include <string>
+#include <sstream>
 #include "cite_blackboard.h"
 #include "MainWindow.h"
 #include "member.h"
