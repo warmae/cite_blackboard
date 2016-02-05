@@ -13,6 +13,7 @@
 #include "undergraduate.h"
 #include "graduate.h"
 #include "faculty.h"
+#include "staff.h"
 #include <QtWidgets/QApplication>
 
 using namespace std;
